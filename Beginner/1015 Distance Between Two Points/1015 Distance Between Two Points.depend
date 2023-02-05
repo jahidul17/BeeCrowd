@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1675619189 source:c:\users\jahidul\onedrive\documents\beecrowd\beginner\1015 distance between two points\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
