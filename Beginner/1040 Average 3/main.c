@@ -19,16 +19,16 @@ int main()
     {
         printf("Aluno aprovado.\n");
     }
-    if(avarage<5.0)
+    else if(avarage<5.0)
     {
         printf("Aluno reprovado.\n");
     }
-    if(avarage>=5.0 && avarage<7.0)
+    else if(avarage>=5.0 && avarage<7.0)
     {
         printf("Aluno em exame.\n");
         double x;
-        printf("Nota do exame: ");
         scanf("%lf",&x);
+        printf("Nota do exame: %.1lf\n",x);
 
         avarage=(avarage+x)/2;
 
