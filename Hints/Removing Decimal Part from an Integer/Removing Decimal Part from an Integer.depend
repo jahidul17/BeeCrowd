@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1675880203 source:c:\users\jahidul\onedrive\documents\beecrowd\hints\removing decimal part from an integer\main.c
+	<stdio.h>
+	<stdlib.h>
+
