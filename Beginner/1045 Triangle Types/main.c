@@ -3,16 +3,36 @@
 
 int main()
 {
-
-    double a,b,c;
+    double a,b,c,temp;
     scanf("%lf %lf %lf",&a,&b,&c);
 
-    if((a>0) && (b>0) && (c>0))
+    if(a<b)
     {
-        if(a>=b+c)
-        {
-            printf("NAO FORMA TRIANGULO\n");
-        }
+        temp=a;
+        a=b;
+        b=temp;
+    }
+    if(a<c)
+    {
+        temp=a;
+        a=c;
+        c=temp;
+    }
+    if(b<c)
+    {
+        temp=b;
+        b=c;
+        c=temp;
+    }
+    if(a>=b+c)
+    {
+        printf("NAO FORMA TRIANGULO\n");
+    }
+
+
+    else
+    {
+
         if((a*a)==(b*b)+(c*c))
         {
             printf("TRIANGULO RETANGULO\n");
@@ -25,11 +45,11 @@ int main()
         {
             printf("TRIANGULO ACUTANGULO\n");
         }
-        if(a==b==c)
+        if((a==b) && (a==c))
         {
             printf("TRIANGULO EQUILATERO\n");
         }
-        if((a==b)||(b==c)||(c==a))
+        else if((a==b)||(b==c)||(c==a))
         {
             printf("TRIANGULO ISOSCELES\n");
         }
