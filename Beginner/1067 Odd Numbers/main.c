@@ -3,9 +3,10 @@
 
 int main()
 {
-    int i;
+    int i,num;
+    scanf("%d",&num);
 
-    for(i=1;i<=1000;i++){
+    for(i=1;i<=num;i++){
         if((i%2)!=0){
             printf("%d\n",i);
         }
