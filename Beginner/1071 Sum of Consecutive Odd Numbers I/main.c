@@ -1,20 +1,26 @@
 /* 1071		Sum of Consecutive Odd Numbers I */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    int x,y,sum;
+    int i,x,y,temp,sum=0;
     scanf("%d %d",&x,&y);
 
-    sum=abs(x)+abs(y);
+    if(x>y){
 
+        temp=x;
+        x=y;
+        y=temp;
+    }
 
-    if(x!=y){
-        printf("%d\n",sum/2);
+    for(i=x+1;i<y;i++){
+        if((i%2)!=0){
+            sum=sum+i;
+        }
     }
-    else{
-        printf("0\n");
-    }
+    printf("%d\n",sum);
+
     return 0;
 }
