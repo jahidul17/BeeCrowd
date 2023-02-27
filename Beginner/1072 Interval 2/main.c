@@ -4,7 +4,7 @@
 
 int main()
 {
-    int i,n,x[10000],y[10000],count1=0,count2=0;
+    int i,n,x[10000],count1=0,count2=0;
     scanf("%d",&n);
 
     if(n<10000)
@@ -16,17 +16,14 @@ int main()
 
         for(i=0; i<n; i++)
         {
-            y[i]=x[i];
-            if(y[i]>=10 && y[i]<=20)
+
+            if(x[i]>=10 && x[i]<=20)
             {
                 count1++;
-                printf("%d\n",y[i]);
             }
-            if(y[i]<10 || y[i]>20)
+            if(x[i]<10 || x[i]>20)
             {
                 count2++;
-                printf("%d\n",y[i]);
-
             }
         }
         printf("%d in\n",count1);
