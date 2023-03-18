@@ -11,8 +11,11 @@ int main()
         scanf("%d",&num[i]);
     }
 
+    rem[0]=num[0];
+
     for(i=0; i<5; i++)
     {
+        if(rem)
         printf("%d\n",num[i]);
     }
 

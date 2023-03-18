@@ -10,8 +10,7 @@ int main()
 
     double num[3],result[10],weighted[3]= {2,3,5};
 
-    while(j<n)
-    {
+
         double sum=0;
 
         for(i=0; i<3; i++)
@@ -31,7 +30,7 @@ int main()
 
 
         j++;
-    }
+
 
 
 
