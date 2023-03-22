@@ -7,14 +7,14 @@ int main()
 
     for(i=0; i<=2; i+=0.2)
     {
-        if((int)i==1){
-            printf("I=%d\nI=%d\nI=%d\n",(int)i,(int)i,(int)i);
+        if((i>0 && i<1) ||(i>1 && i<2) || (i>2 && i<3) ){
+            printf("I=%.1lf\nI=%.1lf\nI=%.1lf\n",i,i,i);
         }
-       printf("I=%.1lf\nI=%.1lf\nI=%.1lf\n",i,i,i);
 
-        if((int)i==2){
+        if((i==0)||(i==1)||(i==2)) {
             printf("I=%d\nI=%d\nI=%d\n",(int)i,(int)i,(int)i);
         }
+
 
     }
 
