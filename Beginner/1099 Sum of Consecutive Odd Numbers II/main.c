@@ -4,26 +4,26 @@
 
 int main()
 {
-    int n;
+    int N;
 
-    scanf("%d",n);
+    scanf("%d",N);
 
     for(int i=1; i<=7; i++)
     {
-        int a,b,temp;
+        int X,Y,temp;
 
-        scanf("%d %d",&a,&b);
+        scanf("%d %d",&X,&Y);
 
-        if(a>b)
+        if(X>Y)
         {
-            temp=a;
-            a=b;
-            b=temp;
+            temp=X;
+            X=Y;
+            Y=temp;
         }
 
         int sum=0;
 
-        for(int i=a+1; i<b; i++)
+        for(int i=X+1; i<Y; i++)
         {
 
 
