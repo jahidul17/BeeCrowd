@@ -4,13 +4,17 @@
 
 int main()
 {
-    int N;
+    int i, N;
 
-    scanf("%d",N);
+    int X,Y,temp;
 
-    for(int i=1; i<=7; i++)
+    scanf("%d",&N);
+
+    while(1)
     {
-        int X,Y,temp;
+
+        if(N==0)
+            break;
 
         scanf("%d %d",&X,&Y);
 
@@ -23,7 +27,7 @@ int main()
 
         int sum=0;
 
-        for(int i=X+1; i<Y; i++)
+        for( i=X+1; i<Y; i++)
         {
 
 
@@ -34,11 +38,8 @@ int main()
 
         }
         printf("%d\n",sum);
+
+        N--;
     }
-
-
-
-
-
     return 0;
 }
