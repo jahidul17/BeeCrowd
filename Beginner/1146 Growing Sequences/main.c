@@ -19,6 +19,7 @@ int main()
             if(i != x){
                 printf(" ");
             }
+
         }
         printf("\n");
     }
