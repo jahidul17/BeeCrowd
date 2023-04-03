@@ -20,6 +20,7 @@ int main()
         fibo_2=fibo;
 
     }
+    printf("\n");
 
     return 0;
 }
