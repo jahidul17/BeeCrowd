@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    int i,n,a[100];
+    int i,n;
+    double a[100];
 
     for(i=0;i<3;i++){
            cin>>a[i];
@@ -13,7 +14,7 @@ int main()
 
     for(i=0;i<3;i++){
         if(a[i]<=10){
-            cout<<"A["<<i<<"] = "<<(float)a[i]<<endl;
+            cout<<"A["<<i<<"] = "<<(double)a[i]<<endl;
         }
     }
 
