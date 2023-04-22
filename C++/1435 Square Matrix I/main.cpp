@@ -1,43 +1,55 @@
+/* 1435		Square Matrix I */
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int row,col,i,j,n,array[50][50],a,b,r,l;
-    a=0;
-    b=n-1;
+    int row,col,i,j,n,a,b,r,l;
 
     while(1)
     {
+
         cin>>n;
 
+        int array[n][n];
+        a=0;
+        b=n-1;
 
-       if(n%2==0){
-        r=n/2;
-       }
-       else if(n%2!=0){
-        r=(n/2)+1;
-       }
-
-       for(l=1;l<=r;l++){
-        for(row=a; row<=b; row++)
+        if(n==0)
         {
-            for(col=a; col<=b; col++)
-            {
+            break;
+        }
 
-                array[row][col]=1;
+        r=n/2;
+
+        if(n%2==1)
+        {
+            r=(n/2)+1;
+        }
+
+
+        for(l=1; l<=r; l++)
+        {
+            for(row=a; row<=b; row++)
+            {
+                for(col=a; col<=b; col++)
+                {
+
+                    array[row][col]=l;
+
+                }
 
             }
+            a++;
+            b--;
 
         }
-        a++;
-        b--;
 
-       }
-
-        for(i=0;i<n;i++){
-            for(j=0;j<n;j++){
+        for(i=0; i<n; i++)
+        {
+            for(j=0; j<n; j++)
+            {
                 if(j==0)
                     printf("%3d",array[i][j]);
                 else
@@ -48,7 +60,6 @@ int main()
         printf("\n");
 
     }
-
 
     return 0;
 }
